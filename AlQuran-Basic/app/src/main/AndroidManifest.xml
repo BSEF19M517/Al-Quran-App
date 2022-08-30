@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlQuranBasic">
         <activity
+            android:name=".SurahListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParaListActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
