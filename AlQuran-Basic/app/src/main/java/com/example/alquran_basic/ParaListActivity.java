@@ -2,7 +2,10 @@ package com.example.alquran_basic;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -23,5 +26,19 @@ public class ParaListActivity extends AppCompatActivity {
         databaseAccess.close();
         ParaInfoAdapter paraInfoAdapter = new ParaInfoAdapter(ParaListActivity.this,paraInfoArrayList);
         paraList.setAdapter(paraInfoAdapter);
+
+        paraList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                ParaInfo paraInfo = (ParaInfo) adapterView.getItemAtPosition(i);
+                int paraNum = paraInfo.getParaID();
+
+                Intent intent = new Intent(ParaListActivity.this,AyahListActivity.class);
+                intent.putExtra("intentFrom","paraActivity");
+                intent.putExtra("ID",String.valueOf(paraNum));
+
+                startActivity(intent);
+            }
+        });
     }
 }
