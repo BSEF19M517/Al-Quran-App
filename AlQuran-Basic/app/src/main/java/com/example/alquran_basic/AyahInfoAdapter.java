@@ -1,10 +1,12 @@
 package com.example.alquran_basic;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -26,9 +28,19 @@ public class AyahInfoAdapter extends ArrayAdapter<AyahInfo> {
 
         TextView ayahNum = convertView.findViewById(R.id.ayah_list_number);
         TextView ayahText = convertView.findViewById(R.id.ayah_list_arabic_txt);
+        ImageButton translation = convertView.findViewById(R.id.ayah_list_btn_translate);
 
         ayahNum.setText(String.valueOf(std.getAyahID()));
         ayahText.setText(std.getAyahText());
+
+        translation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(),TranslationActivity.class);
+                intent.putExtra("ayah",ayahText.getText());
+                mContext.startActivity(intent);
+            }
+        });
 
         return convertView;
     }

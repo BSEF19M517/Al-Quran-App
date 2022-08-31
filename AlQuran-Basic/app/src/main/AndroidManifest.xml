@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlQuranBasic">
         <activity
+            android:name=".TranslationActivity"
+            android:exported="false" />
+        <activity
             android:name=".AyahListActivity"
             android:exported="false" />
         <activity

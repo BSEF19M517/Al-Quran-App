@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class DatabaseAccess {
     private final SQLiteOpenHelper openHelper;
@@ -100,5 +101,21 @@ public class DatabaseAccess {
         }
         cursorCourses.close();
         return ayahArrayList;
+    }
+
+    public ArrayList<String> getTranslation(String ayah){
+        Cursor cursorCourses = db.rawQuery("SELECT FatehMuhammadJalandhri, MehmoodulHassan, DrMohsinKhan, MuftiTaqiUsmani from tayah where ArabicText = \"" + ayah +"\"", null);
+        ArrayList<String> translation = new ArrayList<>();
+
+        if(cursorCourses.moveToFirst()){
+            do {
+                translation.add( cursorCourses.getString(0));
+                translation.add(cursorCourses.getString(1));
+                translation.add(cursorCourses.getString(2));
+                translation.add(cursorCourses.getString(3));
+            }while (cursorCourses.moveToNext());
+        }
+        cursorCourses.close();
+        return translation;
     }
 }
