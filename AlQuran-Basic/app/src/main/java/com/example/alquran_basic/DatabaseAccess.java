@@ -83,4 +83,22 @@ public class DatabaseAccess {
         cursorCourses.close();
         return ayahArrayList;
     }
+
+    public ArrayList<AyahInfo> getAyahInfoByPara(int paraNum) {
+        Cursor cursorCourses = db.rawQuery("SELECT AyaNo, ArabicText FROM tayah WHERE ParaID = " + paraNum,null);
+        ArrayList<AyahInfo> ayahArrayList = new ArrayList<>();
+
+        if(cursorCourses.moveToFirst()){
+            do {
+                int ayahNo = Integer.parseInt(cursorCourses.getString(0));
+                String ayahText = cursorCourses.getString(1);
+                if(ayahNo==1){
+                    ayahArrayList.add(new AyahInfo(0, "بِسۡمِ اللّٰہِ الرَّحۡمٰنِ الرَّحِیۡمِ"));
+                }
+                ayahArrayList.add(new AyahInfo(ayahNo,ayahText));
+            }while (cursorCourses.moveToNext());
+        }
+        cursorCourses.close();
+        return ayahArrayList;
+    }
 }
