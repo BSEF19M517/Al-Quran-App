@@ -1,5 +1,6 @@
 package com.example.alquran_basic;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,7 @@ public class SurahInfoAdapterRV extends RecyclerView.Adapter<SurahInfoAdapterRV.
         holder.surahNameUr.setText(surahInfo.getSurahNameUr());
         holder.surahNameEng.setText(surahInfo.getSurahNameEng());
         holder.surahNazool.setText(surahInfo.getSurahNazool());
+
     }
 
     @Override

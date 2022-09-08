@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -24,5 +25,7 @@ public class ParaListActivityRV extends AppCompatActivity {
         databaseAccess.close();
         ParaInfoAdapterRV paraInfoAdapter = new ParaInfoAdapterRV(paraInfoArrayList);
         paraList.setAdapter(paraInfoAdapter);
+
+        paraList.setClickable(true);
     }
 }

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlQuranBasic">
         <activity
+            android:name=".AyahListActivityRV"
+            android:exported="false" />
+        <activity
             android:name=".SurahListActivityRV"
             android:exported="false" />
         <activity
@@ -17,7 +20,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivityRV"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.AlQuranBasic.NoActionBar"/>
         <activity
             android:name=".Home"
             android:exported="true">

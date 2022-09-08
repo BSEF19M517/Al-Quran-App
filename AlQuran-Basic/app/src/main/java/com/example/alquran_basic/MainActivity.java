@@ -79,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent2 = new Intent(MainActivity.this,SearchSurahActivity.class);
                         startActivity(intent2);
                         break;
+                    case R.id.nav_home:
+                        Intent intent3 = new Intent(MainActivity.this,Home.class);
+                        startActivity(intent3);
+                        break;
                 }
                 return true;
             }
