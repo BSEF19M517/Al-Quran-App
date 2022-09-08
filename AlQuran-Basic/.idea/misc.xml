@@ -3,14 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/drawable/ic_launcher_background.xml" value="0.113" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.113" />
         <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/activity_ayah_list.xml" value="0.20416666666666666" />
-        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/activity_main.xml" value="0.296998420221169" />
         <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/activity_para_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/activity_search_surah.xml" value="0.20416666666666666" />
         <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/activity_surah_list.xml" value="0.20416666666666666" />
         <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/activity_translation.xml" value="0.33" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/app_bar_home.xml" value="0.20416666666666666" />
         <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/ayah_list_item.xml" value="0.33" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/content_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/header.xml" value="0.20416666666666666" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/nav_header_home.xml" value="0.20416666666666666" />
         <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/para_list_item.xml" value="0.33" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/search_surah.xml" value="0.18333333333333332" />
         <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/surah_list_item.xml" value="0.5" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/layout/translation_list_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/menu/activity_home_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/menu/home.xml" value="0.20416666666666666" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/menu/navigation_menu.xml" value="0.25" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.113" />
+        <entry key="..\:/CourseBooks/6th_Semester/MC/github/Al-Quran-App/AlQuran-Basic/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
       </map>
     </option>
   </component>

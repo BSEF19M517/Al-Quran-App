@@ -103,16 +103,16 @@ public class DatabaseAccess {
         return ayahArrayList;
     }
 
-    public ArrayList<String> getTranslation(String ayah){
+    public ArrayList<TranslationInfo> getTranslation(String ayah){
         Cursor cursorCourses = db.rawQuery("SELECT FatehMuhammadJalandhri, MehmoodulHassan, DrMohsinKhan, MuftiTaqiUsmani from tayah where ArabicText = \"" + ayah +"\"", null);
-        ArrayList<String> translation = new ArrayList<>();
+        ArrayList<TranslationInfo> translation = new ArrayList<>();
 
         if(cursorCourses.moveToFirst()){
             do {
-                translation.add( cursorCourses.getString(0));
-                translation.add(cursorCourses.getString(1));
-                translation.add(cursorCourses.getString(2));
-                translation.add(cursorCourses.getString(3));
+                translation.add(new TranslationInfo("FatehMuhammadJalandhri",cursorCourses.getString(0)));
+                translation.add(new TranslationInfo("MehmoodulHassan",cursorCourses.getString(1)));
+                translation.add(new TranslationInfo("DrMohsinKhan",cursorCourses.getString(2)));
+                translation.add(new TranslationInfo("MuftiTaqiUsmani",cursorCourses.getString(3)));
             }while (cursorCourses.moveToNext());
         }
         cursorCourses.close();

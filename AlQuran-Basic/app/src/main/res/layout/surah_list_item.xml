@@ -23,6 +23,7 @@
         android:layout_marginTop="12dp"
         android:text="TextView"
         android:textColor="#CC147740"
+        android:fontFamily="@font/jameelnoori"
         android:textSize="28sp"
         app:layout_constraintEnd_toStartOf="@+id/surah_list_number"
         app:layout_constraintTop_toTopOf="parent" />
